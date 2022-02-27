@@ -32,13 +32,11 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
     <!-- // font css -->
 
-    <!-- Custom styles for this template -->
-    <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
-    <!-- // Custom styles for this template -->
 
-    <!-- ht_ Hottracks custom css -->
-     <link rel="stylesheet" href="../../css/ht_event_mok.css">
-    <!--// ht_ Hottracks custom css -->
+    <!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+    <link rel="stylesheet" href="../../css/ht_css_mok.css">
+    <link rel="stylesheet" href="../../css/ht_template_mok.css">
+    <!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 
 
     <!-- Plug-In javascript -->
@@ -55,12 +53,13 @@
     <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
     <!-- // Plug-In javascript -->
 
-    <!-- UI JavaScript -->
-    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+    <!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
     <script src="../../js/front_bak.js"></script>
-    
-    <!-- // UI JavaScript -->
-    <script src="../../js/ht_event_list.js"></script>
+    <script src="../../js/mok.ui.js"></script>
+    <script src="../../js/ht_lib.js"></script>
+    <script src="../../js/ht_template.js"></script>
+    <script src="../../js/ht_evt_mok.js"></script>
+    <!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 </head>
 
 <body>
@@ -94,71 +93,59 @@
                 </a>
             </div>
         </header>
-        <!-- // 헤더 -->
-        
+        <!-- // 헤더 -->   
         <div class="evt_list_header">
             <h2>이벤트</h2>
-        </div>
-        
-        <!-- 이벤트 퀵메뉴 -->
+        </div>       
+       <!-- 이벤트 퀵메뉴 -->
         <div class="evt_quick_menu_slide">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#a">
-                            <span class="ico">
-                                <img src="../../images/guide/ico_evt_quick_01.svg" alt="">
-                            </span>
+                            <span class="ico"></span>
                             <span class="txt">기획전</span>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#a">
-                            <span class="ico">
-                                <img src="../../images/guide/ico_evt_quick_02.svg" alt="">
-                            </span>
-                            <span class="txt">이벤트</span>
+                            <span class="ico"></span>
+                            <span class="txt">쇼핑이벤트</span>
                         </a>
                     </div>
                     <div class="swiper-slide active">
                         <a href="#a">
-                            <span class="ico">
-                                <img src="../../images/guide/ico_evt_quick_03_active.svg" alt="">
-                            </span>
+                            <span class="ico"></span>
                             <span class="txt">쿠폰존</span>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#a">
-                            <span class="ico">
-                                <img src="../../images/guide/ico_evt_quick_04.svg" alt="">
-                            </span>
+                            <span class="ico"></span>
                             <span class="txt">매장이벤트</span>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#a">
-                            <span class="ico">
-                                <img src="../../images/guide/ico_evt_quick_05.svg" alt="">
-                            </span>
+                            <span class="ico"></span>
                             <span class="txt">컬처이벤트</span>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#a">
-                            <span class="ico">
-                                <img src="../../images/guide/ico_evt_quick_06.svg" alt="">
-                            </span>
+                            <span class="ico"></span>
                             <span class="txt">당첨자발표</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- //이벤트 퀵메뉴 -->
 
         <!-- 컨텐츠 -->
         <main id="containerWrapper" class="container_wrapper">
-            <section>
+            <!--[2022-02-20]  section - list_uniq_btm 클래스 추가-->
+            <section class="list_uniq_btm">
                 <article class="evt_list_area_mn">
                     <div class="evt_menu">              
                         <div class="sort_tab scroll_box">
@@ -167,84 +154,39 @@
                             <a href="#a"><span>높은 할인율순</span></a>
                         </div>
                     </div>
-                    <ul class="evt_products">
-                        <li>
+                    <!--[2022-02-15] class :prod-wrapper row_dir =>  prod-wrapper evt_products row_dir로 변경-->
+                    <ul class="prod-wrapper evt_products row_dir">
+                        <!--prod_item 반복-->
+                        <li class="prod_item">
                             <div class="product_pic">
-                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="">
                             </div>
                             <div class="product_info">
                                 <div class="cpon">20% 쿠폰</div>
                                 <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                <div class="price_discount">
-                                    <span class="discount_rate">50%</span>
-                                    <span class="fianl_price">134,000원</span>
-                                    <span class="price_origin">165,000원</span>
+                                <!-- [2022-02-15] Class :price_discount =>   price_line 으로 변경-->
+                                <div class="price_line">
+                                    <span class="discount_rate">15%</span>
+                                    <span class="final_price">9,234,000</span>
+                                    <span class="price_origin">9,200,000</span>
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <!--//prod_item 반복-->
+
+
+
+                        <li class="prod_item">
                             <div class="product_pic">
-                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="" >
                             </div>
                             <div class="product_info">
                                 <div class="cpon">1,000원 쿠폰</div>
                                 <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                <div class="price_discount">
-                                    <span class="discount_rate">50%</span>
-                                    <span class="fianl_price">134,000원</span>
-                                    <span class="price_origin">165,000원</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product_pic">
-                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-                            </div>
-                            <div class="product_info">
-                                <div class="cpon">20% 쿠폰</div>
-                                <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                <div class="price_discount">
-                                    <span class="discount_rate">50%</span>
-                                    <span class="fianl_price">134,000원</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product_pic">
-                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-                            </div>
-                            <div class="product_info">
-                                <div class="cpon">20% 쿠폰</div>
-                                <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                <div class="price_discount">
-                                    <span class="discount_rate">50%</span>
-                                    <span class="fianl_price">134,000원</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product_pic">
-                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-                            </div>
-                            <div class="product_info">
-                                <div class="cpon">20% 쿠폰</div>
-                                <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                <div class="price_discount">
-                                    <span class="discount_rate">50%</span>
-                                    <span class="fianl_price">134,000원</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product_pic">
-                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-                            </div>
-                            <div class="product_info">
-                                <div class="cpon">20% 쿠폰</div>
-                                <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                <div class="price_discount">
-                                    <span class="discount_rate">50%</span>
-                                    <span class="fianl_price">134,000원</span>
+                                <div class="price_line">
+                                    <span class="discount_rate">15%</span>
+                                    <span class="final_price">9,234,000</span>
+                                    <span class="price_origin">9,200,000</span>
                                 </div>
                             </div>
                         </li>
@@ -263,11 +205,6 @@
         <!-- // 컨텐츠 -->
         <!-- 푸터 -->
 		<footer class="footer_wrapper">
-			<div class="notice_wrap">
-				<span class="notice_text">공지사항</span>
-				<a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
-			</div>
-
 			<div class="footer_body">
 				<div class="logo_box">
 					<a href="#" class="logo_link">

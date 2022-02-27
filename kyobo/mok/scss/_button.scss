@@ -1,7 +1,7 @@
 
 .devide_hr {
     display: block;
-    background: #f7f7f7;
+    background: #f7f7f7; 
     height: 8px;
     margin: 20px -20px;
     border: 0;
@@ -9,16 +9,16 @@
 
 @mixin icoMore($top){
     &.ico_more {
-        &:after {
-            position: relative;
+        padding-right:10px;
+        &:before {
+            position: absolute;
             content: "";
-            top: $top;
+            top: 2px;
             width: 10px;
             height: 18px;
-            display: inline-block;
             background: url(../images/ico/ico_more.png) no-repeat 0 3px;
             background-size: 5px auto;    
-            margin-left: 5px;                 
+            right:-5px;               
         }   
     }    
 }
@@ -203,7 +203,7 @@ $txt-lightGrey: #767675 !default;
     width: 50px;
     height: 50px;
     border-radius: 6px;
-    color: #000;
+    color: #fff;
     background-color: $btn-default;
     transition: background-color .2s ease-out,border-color .2s ease-out;
     border:solid 1px #ccc;
@@ -278,14 +278,14 @@ button.btn_sm {
             padding-left: 22px;            
         }
         &.ico_review {
-            background: url(../images/ico/ico_review.png) no-repeat 0 3px;
-            background-size: 20px auto;
-            padding-left: 22px;            
+            background: url(../images/ico/ico_review.svg) no-repeat 0 3px;
+            background-size: 15px auto;
+            padding-left: 20px;           
         } 
         &.ico_comment {
-            background: url(../images/ico/ico_comment.png) no-repeat 0 1px;
-            background-size: 20px auto;
-            padding-left: 25px;            
+            background: url(../images/ico/ico_comment.svg) no-repeat -3px -1px;
+            background-size: 40px auto;
+            padding-left: 30px;            
         }                
   
     }
@@ -345,6 +345,9 @@ button.btn_sm {
     display: inline-block;
     font-size: 14px;
     font-weight: $font-weight-bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     @include icoMore(5px);
   
 }
@@ -524,6 +527,7 @@ button.btn_sm {
             .txt_reaction {
                 font-size: 13px;
                 margin-left: 5px;
+                color:#474C98;
             }
         }
     }
@@ -580,6 +584,10 @@ button.btn_sm {
     &.active {
         .ico_good {
             background: url(../images/ico/ico_good_active.svg) no-repeat 0 0;
+        }
+        .txt_count {
+            color:#474C98 !important;
+            font-weight: 700;
         }
     }
 }

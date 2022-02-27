@@ -339,6 +339,51 @@ button.btn_primary {
         color: #fff;
     }
 }
+
+a.btn_primary2, button.btn_primary2 {
+    color: #fff;
+    background: #474c98;
+    border: 1px solid #474c98;
+    transition: background-color .2s ease-out,border-color .2s ease-out;
+}
+a.btn_primary2 {
+    &:active, &:focus {
+        background: #2c307c;
+        border-color: #2c307c;
+    }
+}
+button.btn_primary2 {
+    &:active, &:focus {
+        background: #2c307c;
+        border-color: #2c307c;
+    }
+}
+a.btn_primary2 {
+    &.disabled, &[aria-disabled], &[disabled] {
+        background:#a6a9d7;
+        border-color:#a6a9d7;
+    }
+}
+button.btn_primary2 {
+    &.disabled, &[aria-disabled], &[disabled] {
+        background:#a6a9d7;
+        border-color:#a6a9d7;
+    }
+}
+.btn_outline_primary2 {
+    color: $btn-primary;
+    border:solid 1px $btn-primary;
+    &:hover {
+        background: #FFF4F1;
+        color: #474c98;
+    }     
+    &.disabled {
+        background: #fff;
+        color: #fff;
+    }
+}
+
+
 a.btn_light_gray, button.btn_light_gray {
     color: #fff;
     background: #767676;
@@ -723,6 +768,7 @@ button.btn_text_link {
         background-size: 18px 18px;
         vertical-align: top;
         transition: background .2s ease-out;
+
     }
     &.active .ico_wish {
         background-image: url(../images/guide/ico_heart_active.svg);
@@ -754,6 +800,21 @@ button.btn_text_link {
             background-size: 14px 14px;
         }
     }
+    .ico_heart {
+        display: inline-block;
+        background: url(../images/ico/ico_heart.png) no-repeat 0 0;
+        background-size: 20px 20px;  
+        width: 20px;        
+        height: 20px;
+    }            
+    &.active {
+        .ico_heart {
+            background: url(../images/ico/ico_heart_active.png) no-repeat 0 0;
+            background-size: 20px 20px;  
+            width: 20px;        
+            height: 20px;
+        }
+    } 
 }
 
 .btn_gift {
@@ -869,19 +930,19 @@ button.btn_text_link {
         vertical-align: top;
         transition: background .2s ease-out;
     }
-    .ico_info {
-        background-image: url(../images/btn_tooltip_mok.png);
-        background-size: 22px 22px;
-    }
+    // .ico_info {
+    //     background-image: url(../images/btn_tooltip_mok.png);
+    //     background-size: 22px 22px;
+    // }
     .ico_arw {
         background-image: url(../images/arw_tooltip_mok.png);
         background-size: 22px 22px;
     }
     &.active {
-        .ico_info {
-            background-image: url(../images/btn_tooltip_active_mok.png);
-            background-size: 22px 22px;
-        }
+        // .ico_info {
+        //     background-image: url(../images/btn_tooltip_active_mok.png);
+        //     background-size: 22px 22px;
+        // }
         .ico_arw {
             background-image: url(../images/arw_tooltip_active_mok.png);
             background-size: 22px 22px;
@@ -1076,19 +1137,20 @@ button.btn_text_link {
     }
     .btn_wish_text .ico_wish {
         background-image: url(../images/ico_heart_h18_mok@2x.png);
+
     }
     .btn_wish_text.active .ico_wish {
         background-image: url(../images/ico_heart_h18_active_mok@2x.png);
     }
-    .btn_tooltip .ico_info {
-        background-image: url(../images/btn_tooltip_mok@2x.png);
-    }
+    // .btn_tooltip .ico_info {
+    //     background-image: url(../images/btn_tooltip_mok@2x.png);
+    // }
     .btn_tooltip .ico_arw {
         background-image: url(../images/arw_tooltip_mok@2x.png);
     }
-    .btn_tooltip.active .ico_info {
-        background-image: url(../images/btn_tooltip_active_mok@2x.png);
-    }
+    // .btn_tooltip.active .ico_info {
+    //     background-image: url(../images/btn_tooltip_active_mok@2x.png);
+    // }
     .btn_tooltip.active .ico_arw {
         background-image: url(../images/arw_tooltip_active_mok@2x.png);
     }
@@ -1253,7 +1315,7 @@ button.btn_text_link {
 }
 .badge {
     display: inline-block;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 18px;
     height: 20px;
@@ -1323,14 +1385,14 @@ button.btn_text_link {
         display: inline-block;
         width: 30px;
         height: 20px;
-        background: url(../images/ico/ico_truck.svg) no-repeat 0 -5px;
+        background: url(../images/ico/ico_truck.svg) no-repeat 0 ;
         background-size: 30px auto;
     }
-    .ico_truck_txt {
+    .ico_truck_txt {                    
         display: inline-block;
         width: 40px;
         height: 20px;
-        background: url(../images/ico/ico_truck_txt.svg) no-repeat 0 2px;
+        background: url(../images/ico/ico_truck_txt.svg) no-repeat 0 2px; 
         background-size: 40px auto;
     }
 }
@@ -1359,6 +1421,7 @@ button.btn_text_link {
         vertical-align: top;
         .text {
             position: relative;
+            white-space: nowrap;
         }
     }
     button.tag_item {

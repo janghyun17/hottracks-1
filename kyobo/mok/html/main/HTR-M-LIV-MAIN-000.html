@@ -31,14 +31,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
 <!-- // font css -->
 
-<!-- Custom styles for this template -->
-<!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
-<!-- // Custom styles for this template -->
-
-<!-- ht_ Hottracks custom css -->
-<link rel="stylesheet" href="../../css/ht_style_mok.css" />
-<link rel="stylesheet" href="../../css/ht_wel_main.css" /><!-- 메인 css -->
-<!--// ht_ Hottracks custom css -->
+<!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+<link rel="stylesheet" href="../../css/ht_css_mok.css">
+<link rel="stylesheet" href="../../css/ht_template_mok.css">
+<!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 
 
 <!-- Plug-In javascript -->
@@ -55,13 +51,12 @@
 <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
 <!-- // Plug-In javascript -->
 
-<!-- UI JavaScript -->
-<script src="../../js/circletype.min.js"></script>
+<!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 <script src="../../js/front_bak.js"></script>
-
-<script src="../../js/ht_wel_main.js"></script><!-- 메인 script -->
-<!-- // UI JavaScript -->
-<link rel="stylesheet" href="../../css/ht_live_main.css" /><!-- 메인 css -->
+<script src="../../js/mok.ui.js"></script>
+<script src="../../js/ht_lib.js"></script>
+<script src="../../js/ht_template.js"></script>
+<!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 </head>
 
 <body>
@@ -72,7 +67,7 @@
 	<!-- wrapper -->
 	<!--DESC : 에러페이지인 경우 [error] 클래스 추가 -->
 	<!-- ht_ Hottracks ht_ 클래스 추가 -->
-	<div class="wrapper ht_">
+	<div class="ht_ wrapper">
 		<!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
 		<header id="headerWrapper" class="header_wrapper header_main">
 			<div class="header_top_wrap">
@@ -224,7 +219,6 @@
 				</div>
 				<!-- //main_menu_wrap -->
 
-
 				
 				<!-- 라이브 메인 컨텐츠 -->
 				<div class="wel_main_wrap">
@@ -234,6 +228,7 @@
 							<img src="../../images/main/txt_logo_wh.svg" alt="핫트랙스">
 							<img src="../../images/main/ico_wel_live.png" alt="라이브">
 						</h2>
+						<p class="eye_wel_live">12월 13일(월)<!--오늘 라이브--></p><!-- 22.02.24 수정 -->
 
 						<!-- wel_live_cont -->
 						<div class="wel_live_cont wel_cont active">
@@ -242,7 +237,6 @@
 									<!-- swiper-slide 반복 -->
 									<div class="swiper-slide on"><!-- 라이브 일때 class="on" -->
 										<div class="live_box">
-											<p class="eye_wel_live">12월 13일(월) 오늘 라이브</p>
 											<p class="tit_wel_live">로지텍 이모지 키와<br>컬러풀 디자인을 만나보세요</p>
 											<p class="txt_wel_live">워머 + 캔들 세트 구매 시 최대 할인 혜택!</p>
 											<!-- live_btn -->
@@ -310,7 +304,6 @@
 
 									<div class="swiper-slide">
 										<div class="live_box">
-											<p class="eye_wel_live">12월 13일(월) 오늘 라이브</p>
 											<p class="tit_wel_live">지금은 언택트 시대!<br>99% 살균해</p>
 											<p class="txt_wel_live">워머 + 캔들 세트 구매 시 최대 할인 혜택!</p>
 											<!-- live_btn -->
@@ -368,7 +361,6 @@
 
 									<div class="swiper-slide">
 										<div class="live_box">
-											<p class="eye_wel_live">12월 13일(월) 오늘 라이브</p>
 											<p class="tit_wel_live">지금은 언택트 시대!<br>99% 살균해</p>
 											<p class="txt_wel_live">워머 + 캔들 세트 구매 시 최대 할인 혜택!</p>
 											<!-- live_btn -->

@@ -356,10 +356,10 @@
     box-sizing: border-box;
     &.active {
         .btn_tooltip {
-            .ico_info {
-                background-image: url('../images/btn_tooltip_active_mok.png');
-                background-size: 22px 22px;
-            }
+            // .ico_info {
+            //     background-image: url('../images/guide/btn_tooltip_active@2x.png');
+            //     background-size: 22px 22px;
+            // }
             .ico_arw {
                 background-image: url('../images/arw_tooltip_active_mok.png');
                 background-size: 22px 22px;
@@ -509,16 +509,16 @@
         transition: opacity 0.3s ease-out, transform 0s 0.3s;
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .tooltip_wrap.active .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_active_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .tooltip_wrap.active .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_active_mok@3x.png');
-    }
-}
+// @media(-webkit-min-device-pixel-ratio: 2) {
+//     .tooltip_wrap.active .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_active_mok@2x.png');
+//     }
+// }
+// @media(-webkit-min-device-pixel-ratio: 3) {
+//     .tooltip_wrap.active .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_active_mok@3x.png');
+//     }
+// }
 @media(-webkit-min-device-pixel-ratio: 2) {
     .tooltip_wrap.active .btn_tooltip .ico_arw {
         background-image: url('../images/arw_tooltip_active_mok@2x.png');
@@ -539,16 +539,16 @@
         background-image: url('../images/btn_tooltip_close_mok@3x.png');
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .tooltip_wrap.type_sm .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_sm_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .tooltip_wrap.type_sm .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_sm_mok@3x.png');
-    }
-}
+// @media(-webkit-min-device-pixel-ratio: 2) {
+//     .tooltip_wrap.type_sm .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_sm_mok@2x.png');
+//     }
+// }
+// @media(-webkit-min-device-pixel-ratio: 3) {
+//     .tooltip_wrap.type_sm .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_sm_mok@3x.png');
+//     }
+// }
 @media(-webkit-min-device-pixel-ratio: 2) {
     .tooltip_wrap.type_sm .btn_tooltip .ico_question {
         background-image: url('../images/btn_tooltop_question_sm_mok@2x.png');
@@ -559,48 +559,16 @@
         background-image: url('../images/btn_tooltop_question_sm_mok@3x.png');
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_sm_active_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_sm_active_mok@3x.png');
-    }
-}
-.toast_wrap {
-    display: none;
-    position: fixed;
-    left: 50%;
-    bottom: 36px;
-    width: calc(100% - 40px);
-    max-width: 335px;
-    z-index: 1005;
-    transform: translateX(-50%);
-    transition: bottom 0.23s;
-    font-size: 0;
-    .toast_message {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        box-sizing: border-box;
-        width: 100%;
-        min-height: 50px;
-        padding: 15px 30px 11px;
-        border-radius: 10px;
-        background: rgba(80, 85, 177, 0.9);
-        border: 1px solid #5055b1;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
-        color: #fff;
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        font-weight: 500;
-        text-align: center;
-    }
-}
+// @media(-webkit-min-device-pixel-ratio: 2) {
+//     .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_sm_active_mok@2x.png');
+//     }
+// }
+// @media(-webkit-min-device-pixel-ratio: 3) {
+//     .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_sm_active_mok@3x.png');
+//     }
+// }
 
 /* sps */
 // .wrapper .header_wrapper {
@@ -1552,4 +1520,3 @@
         background-image: url('../images/arw_fold_toggle_mok@3x.png');
     }
 }
-/*# sourceMappingURL=components_mok.css.map */

@@ -9,7 +9,6 @@ https://github.com/the51hsson/doc/blob/main/scss_guide.md 참조
  최종수정일: 
 */
 @import "_variables.scss"; 
-@import "_functions.scss";
 @import "_mixins.scss";
 
 @import "_ht_reset.scss"; // eric meyer reset 2.0, _ht : 핫트랙스 접두어
@@ -17,3 +16,4 @@ https://github.com/the51hsson/doc/blob/main/scss_guide.md 참조
 @import "_ht_layout.scss"; // header, footer, dialog, main, sub_type별 정의
 @import "_ht_header.scss"; // todo : layout으로 추가 할 것
 @import "_legacy.scss" // 3과제 css, todo : 정리 후 삭제
+

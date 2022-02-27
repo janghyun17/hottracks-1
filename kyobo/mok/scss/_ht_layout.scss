@@ -1,5 +1,38 @@
+/* Hottracks : Tempate */
+body {
+    background:#f7f7f7;
+    &:before {
+        position:absolute;left:0;top:0;width:100%;max-width:750px;height:100%;background:#fff;content:"";z-index:-1;
+    }
+}
+@media only screen and (min-width:750px) {
+    body:before {
+        left:50%;margin-left:-375px;
+    }
+}
+
 .ht_ {
+    max-width:750px;margin:0 auto;
+}
+
+
+
+
+
+
+.ht_ {
+    #containerWrapper {
+        background-color: #fff;
+    }
+    .content_wrap {
+        background-color: #fff;
+    }
+    .wrap {
+        background-color: #fff;
+        padding-bottom:80px;
+    }
     .contents_wrap {
+        background-color: #fff;
         .main_menu_wrap {
             position: sticky; 
             left: 0;
@@ -409,6 +442,7 @@
 .ht_ {
     .container_wrapper {
         position: relative;
+        background-color: #fff;
     }
     .product_wrap_li {
         width: 100px;

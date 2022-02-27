@@ -6,7 +6,7 @@
 .mgt14 {margin-top: 14px !important;}
 .mgt20 {margin-top: 20px !important;}
 .mgt24 {margin-top: 24px !important;}
-.mgt40 {margin-top: 40px !important;}
+.mgt40 {margin-top: 40px !important;} 
 
 /* visual area */
 .visual_wrap {
@@ -19,12 +19,12 @@
     overflow: hidden;
     margin: 0 auto;
 }    
-.swiper-slide img{
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-    max-height: 400px;    
-}
+// .swiper-slide img{
+//     width: 100%;
+//     height: 100%;
+//     max-width: 400px;
+//     max-height: 400px;    
+// }
 .visual_wrap .swiper-pagination-fraction {
     width: 58px;
     height: 25px;
@@ -59,7 +59,8 @@
 /* 바로가기 메뉴 */
 .quick_area {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: center;
     .link_home {
         display: inline-block;
@@ -67,6 +68,7 @@
         height: 40px;
         &.ico_gohome {
             position: relative;
+            margin-right:10px;
             &:after {
                 content: "";
                 display: inline-block;
@@ -81,6 +83,7 @@
         }
         &.ico_gomusic {
             position: relative;
+            margin-right:10px;
             &:after {
                 content: "";
                 display: inline-block;
@@ -95,6 +98,7 @@
         }
         &.ico_gobluelay {
             position: relative;
+            margin-right:10px;
             &:after {
                 content: "";
                 display: inline-block;
@@ -113,7 +117,14 @@
 /* hotpick 간격 */
 .hotpick_area {
     padding-top: 12px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
+    .tit_sub_area {
+        padding:12px 0 16px 0;
+        .tit{
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
     .hotpickslide_wrap {
         margin-top: -4px;
         position: relative;
@@ -121,7 +132,7 @@
         .swiper-container {
             width: 100%;
             height: 100%;
-            padding: 0 20px;
+            padding: 1px 20px;
 
             .swiper_control_box {
                 margin-top: 10px;
@@ -133,15 +144,18 @@
             }
         }        
     }
+    & + .multi_review_area {
+        margin-top:0;
+    }
 }
 
 /* hotpick area */
-.hotpickslide_wrap .swiper-slide img{
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-    max-height: 400px;    
-}
+// .hotpickslide_wrap .swiper-slide img{
+//     width: 100%;
+//     height: 100%;
+//     max-width: 400px;
+//     max-height: 400px;    
+// }
 .hotpickslide_wrap .swiper-pagination-fraction {
     width: 58px;
     height: 25px;
@@ -179,6 +193,10 @@
                     font-family: 'Roboto';
                     font-weight: 400;
                 }
+                .txt_primary {
+                    font-family: "Noto Sans KR",sans-serif;
+                    color:#474C98 !important;
+                }
                 .btn_share {
                     cursor: pointer;
                     width: 18px;
@@ -194,8 +212,9 @@
                 color: #000;
             }
             .tit_bottom_dec {
+                font-weight: normal;
                 font-size: 13px;
-                color: rgb(218,33,40);
+                color: #474C98;
             }
         }
     }
@@ -379,8 +398,8 @@
         }
     } 
     .freebie_wrap {
-        background: #fff4f1;
-        border: solid 1px #d53020;
+        background-color: #F4F4F4;
+        border: solid 1px #000;
         border-radius: 4px;
         padding: 20px;
         position: relative;
@@ -637,6 +656,7 @@
                     position: relative;
                     padding-left: 20px;
                     display: inline-block;
+                    color:#474C98;
                     &:before {
                         content: "";
                         display: block;
@@ -645,7 +665,7 @@
                         position: absolute;
                         left: 0;
                         top: 6px;
-                        background: url(../images/ico/ico_quotation.png);
+                        background: url(../images/ico/ico_quotation.svg);
                         background-size: 16px auto;
                     }
                 }
@@ -727,8 +747,9 @@
 
 /* review */
 .slide_review_wrap {
-    background:#FFF4F1;
+    background:#F4F4F4;
     padding: 0 20px 20px;
+    border:1px solid #000;
     border-radius: 4px;
     .review_inner {
         border-bottom: 0;
@@ -784,6 +805,7 @@
             }
             .thumnail_review {
                 display: flex;
+                flex-shrink: 0;
                 width: 78px;
                 height: 78px;
                 overflow: hidden;
@@ -953,7 +975,9 @@
                 .right_area {
                     .txt_reply {
                         font-size: 14px;
-                        font-weight: 500;
+                        .txt_primary {
+                            font-weight: 500;
+                        }                    
                     }                
                 }            
             }
@@ -1078,12 +1102,12 @@
                     height: 100%;
                     padding: 0 20px;
                 }    
-                .photoreview_wrap .swiper-slide img{
-                    width: 100%;
-                    height: 100%;
-                    max-width: 400px;
-                    max-height: 400px;    
-                }
+                // .photoreview_wrap .swiper-slide img{
+                //     width: 100%;
+                //     height: 100%;
+                //     max-width: 400px;
+                //     max-height: 400px;    
+                // }
                 .photoreview_wrap .swiper-pagination-fraction {
                     width: 58px;
                     height: 25px;
@@ -1302,8 +1326,21 @@
             margin-bottom: 12px;
             .auto_overflow_inner {
                 .review_comment_area {
+                    position:relative;
+                    .prod_kind {
+                        position:absolute;
+                        line-height: 20px;
+                        font-size: 13px;
+                        color:#767676;
+                        left:0;
+                        top:0;
+                    }
                     .txt_review {
                         margin-bottom: 12px;
+                    }
+                    .prod_kind + .txt_review {
+                        padding-top:32px;
+                        height: 72px;
                     }
                 }
             }
@@ -1324,7 +1361,6 @@
             display: inline-block;
             width: 50%;
             padding: 0 10px;
-            float: left;
             margin-bottom: 24px;
             .figure {
                 position: relative;
@@ -1379,9 +1415,6 @@
                         font-family: Roboto;
                         font-weight: 700;
                         font-weight: $font-weight-bold;
-                    }
-                    .txt_unit {
-                    
                     }
                 }
             }
@@ -1520,15 +1553,13 @@
 [class^=bul_item_].font_size_xxs:before {width: 2px; height: 2px;}
 [class^=bul_item_].font_size_xxs+.font_size_xxs {margin-top: 4px;}
 [class^=bul_item_].font_size_xxs .bul_list {margin-top: 4px;}
-.bul_item_dot {padding-left: 9px;}
+[class^=bul_item_].colBlack {color:#000;}
+.bul_item_dot {padding-left: 9px; .txt_primary {  color: #474c98 !important; }}
 .bul_item_dot:before {content: ""; display: block; position: absolute; left: 0; top: 7px; width: 3px; height: 3px; border-radius: 50%; background-color: #767676;}
 .bul_item_asterisk {color: #767676; padding-left: 8px;}
 .bul_item_asterisk:before {content: "*"; color: #474c98; position: absolute; left: 0;}
 .bul_item_branch {padding-left: 11px;}
 .bul_item_branch:before {content: ""; display: block; position: absolute; left: 0; top: 5px; width: 6px; height: 6px; background-position: center; background-repeat: no-repeat; background-image: url(../images/bul_branch_mok.png); background-size: 6px 6px;}
-
-
-
 
 
 .hotpickslide_wrap {
@@ -1589,7 +1620,6 @@
                     width: 140px;
                     margin-right: 16px;
                     display: inline-block;
-                    float: left;
                     a {
                         display: block;
                         .figure {
@@ -1646,9 +1676,6 @@
                                     font-family: Roboto;
                                     font-weight: 700;
                                     font-weight: $font-weight-bold
-                                }
-                                .txt_unit {
-                                
                                 }
                             }
                         }
@@ -1767,9 +1794,9 @@
     
 }
 
-.recomend_area {
+.recomened_area{
     .tit_con_area {
-        margin-bottom: 20px;
+        padding-bottom:0;
     }
 }
 
@@ -1778,6 +1805,10 @@
     border-radius: 4px;
     background-color: #f7f7f7;
     padding:20px;
+    margin-top:8px;
+    &:first-of-type {
+        margin-top:0;
+    }
     .info_area {
         & + .info_area {
             margin-top: 12px;
@@ -1815,6 +1846,19 @@
                     background-size: 18px auto;    
                     position: relative;
                     top: 3px;                                
+                }
+
+            }
+            .ico_reservation_heart {
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background: url(../images/ico/ico_reservation_heart.svg) no-repeat 0 0;
+                    background-size: 16px auto;    
+                    position: relative;
+                    top: 5px;                                
                 }
 
             }
@@ -1870,6 +1914,19 @@
                 }
 
             }
+            .ico_overseas {
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;                
+                    background: url(../images/ico/ico_overseas.svg) no-repeat 0 0;
+                    background-size: 16px auto; 
+                    position: relative;
+                    top: 3px;           
+                }
+
+            }
         }
     }            
     .txt_dec {
@@ -1908,6 +1965,7 @@
     .txt_dec {
         position: relative;
         padding-left: 27px;
+        font-size: 13px;
         &:after {
             position: absolute;
             left: 0;
@@ -1916,7 +1974,7 @@
             width: 26px;
             height: 26px;
             display: inline-block;
-            background: url(../images/ico/ico_zoomin.svg) no-repeat 0 0;
+            background: url(../images/ico/ico_zoomin.svg) no-repeat 0 -3px;
             background-size: 26px 26px;
         }
     }

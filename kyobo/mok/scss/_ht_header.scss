@@ -683,7 +683,7 @@
     /* 공통 푸터 */
     // 교보 가이드 추후 수정 할수도?
     .footer_wrapper {
-        margin-top: 80px;
+        margin-top: 0px;
     
         .notice_wrap {
             display: flex;
@@ -730,6 +730,7 @@
         }
     
         .footer_body {
+            background-color:#fff;
             border-top: 1px solid #d5d5d5;
             padding: 34px 20px 30px;
         
@@ -772,6 +773,9 @@
         
                     .btn_footer_link {
                         margin-top: -3px;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 3px;
                     }
                 }
     
