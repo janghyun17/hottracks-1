@@ -267,7 +267,7 @@ a.btn_md, button.btn_md {
   line-height: 23px;
   letter-spacing: -.01em;
   font-family: "Noto Sans KR",sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 a.btn_md.btn_pill, button.btn_md.btn_pill {
@@ -3796,7 +3796,7 @@ body.dialog_open {
   overflow-y: auto;
   overflow-x: hidden;
   background: #fff;
-  margin: 30px 20px 34px;
+  margin: 32px 20px;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -12347,6 +12347,17 @@ body:before {
           animation: none !important;
 }
 
+.mc_txt02 {
+  margin-top: 5px;
+  color: #000;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.mc_txt02.center {
+  text-align: center;
+}
+
 .txt_swiper {
   margin: -10px -20px 10px -20px;
   padding: 0 20px;
@@ -13392,6 +13403,7 @@ body:before {
 .ico_marker_area .ico_marker.on {
   background: #fff4f1;
   color: #da2128;
+  font-weight: 700;
 }
 
 .prod_like_count {
